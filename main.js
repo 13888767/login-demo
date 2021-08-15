@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loginForm.classList.remove("form--hidden");
         createAccountForm.classList.add("form--hidden");
     });
-//can yuo see this yrean?
+
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
 
