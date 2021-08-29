@@ -5,7 +5,7 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.remove("form__message--success", "form__message--error");
     messageElement.classList.add(`form__message--${type}`);
 }
-//hello 
+
 function setInputError(inputElement, message) {
     inputElement.classList.add("form__input--error");
     inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
 
-        // Add database to compare
+        // Perform your AJAX/Fetch login
 
         setFormMessage(loginForm, "error", "Invalid username/password combination");
     });
